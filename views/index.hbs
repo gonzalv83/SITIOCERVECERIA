@@ -39,11 +39,11 @@
 </div>
 
 <div id="novedades" class="row p-4">
-    <div class="col-md-5" offset-md-2 py-3>
+    <div class="col-md-5 offset-md-2 py-3">
         <h2>Novedades</h2>
         <ul class="lista-novedades">
             {{#each novedades}}
-            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#Modal{{id}}"><img src="images/novedades01.jpg"
+            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#Modal{{id}}"><img src="{{imagen}}" width="120"
                         alt="">{{titulo}}</a>
             </li>
             {{/each}}
@@ -62,8 +62,8 @@
                 </div>
                 <div class="modal-body">
                     <h6>{{subtitulo}}</h6>
-                    <p>{{cuerpo}}
-                        debitis. Aliquid sed excepturi similique!</p>
+                    <img src="{{imagen}}" width="200">
+                    <p>{{cuerpo}}</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
